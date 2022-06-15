@@ -1,1 +1,1 @@
-# simple_shell
+Solomon and Adam Project
