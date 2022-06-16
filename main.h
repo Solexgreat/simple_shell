@@ -92,13 +92,13 @@ typedef struct builtin_s
 	int (*f)(data_shell *datash);
 } builtin_t;
 
-/* aux_lists.c */
+/* aux_lists01.c */
 sep_list *add_sep_node_end(sep_list **head, char sep);
 void free_sep_list(sep_list **head);
 line_list *add_line_node_end(line_list **head, char *line);
 void free_line_list(line_list **head);
 
-/* aux_lists2.c */
+/* aux_lists02.c */
 r_var *add_rvar_node(r_var **head, int lvar, char *var, int lval);
 void free_rvar_list(r_var **head);
 
@@ -114,14 +114,14 @@ void _memcpy(void *newptr, const void *ptr, unsigned int size);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char **_reallocdp(char **ptr, unsigned int old_size, unsigned int new_size);
 
-/* aux_str2.c */
+/* aux_str02.c */
 char *_strdup(const char *s);
 int _strlen(const char *s);
 int cmp_chars(char str[], const char *delim);
 char *_strtok(char str[], const char *delim);
 int _isdigit(const char *s);
 
-/* aux_str3.c */
+/* aux_str03.c */
 void rev_string(char *s);
 
 /* check_syntax_error.c */
@@ -165,7 +165,7 @@ int is_executable(data_shell *datash);
 int check_error_cmd(char *dir, data_shell *datash);
 int cmd_exec(data_shell *datash);
 
-/* env1.c */
+/* env01.c */
 char *_getenv(const char *name, char **_environ);
 int _env(data_shell *datash);
 
@@ -209,7 +209,7 @@ char *error_permission(char **args);
 char *error_path_126(data_shell *datash);
 
 
-/* get_error.c */
+/* get_errors.c */
 int get_error(data_shell *datash, int eval);
 
 /* get_sigint.c */
